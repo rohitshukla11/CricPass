@@ -157,7 +157,7 @@ contract CricTicket is ERC721, Ownable, ReentrancyGuard {
     uint256 public currentTokenId;
     uint256 public constant TOTAL_SUPPLY = 50000;
     uint256 public constant TICKET_PRICE = 0.01 ether;
-    uint256 public constant LIMIT_PER_PERSON = 2;
+    uint256 public constant LIMIT_PER_PERSON = 5;
 
    constructor() ERC721("CricTicket", "CricTicket") {
         baseURI = "ipfs://bafybeidhngmbk5oam3uqs33g5k2cbddiqums4sifoycbfqa6l562gkahri/";
