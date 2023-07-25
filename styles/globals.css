@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply capitalize;
+}
+
+.btn-primary {
+  @apply btn border-none text-white bg-gradient-to-r from-blue-800 to-indigo-900 shadow-md hover:scale-[1.01];
+}
+.nav-item {
+  @apply btn bg-transparent border-none text-lg font-semibold text-white hover:bg-white hover:text-blue-900  lg:text-center justify-start py-0;
+}
+
+.nav-item-end {
+  @apply bg-white border-transparent border-2 hover:bg-white hover:bg-transparent hover:border-white  hover:text-white text-indigo-900 rounded-full;
+}
+
+tr,
+th,
+td {
+  @apply py-2 px-2 bg-transparent text-left;
+}
+
+.ticket {
+  @apply border-y-2;
+}
+
+.subtitle {
+  @apply text-sm;
+}
+
+.main {
+  @apply text-base font-semibold line-clamp-1;
+}
+
+.main-container {
+  @apply bg-neutral-200 min-h-screen pb-8 text-sm sm:text-base;
+}
